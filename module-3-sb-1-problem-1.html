@@ -1,44 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/style.css">
-        <title>Module 3 Skill Building No. 1 - Problem 1</title>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Module 3 Skill Building No. 1 - Problem 1</title>
+</head>
 
-    <body>
+<body>
 
-        <div class="container">
-            <div class="row mt-5">
-                <div class="col-12">
-                    <h1>Module 3 Skill Building No. 1 - Problem 1</h1>
-                    <button type="button" class="btn btn-success" onclick="startThings()">START</button>
-                    <div id="output" class="mt-5"></div>
-                </div>
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-12">
+                <h1>Module 3 Skill Building No. 1 - Problem 1</h1>
+                <button type="button" class="btn btn-success" onclick="startThings()">START</button>
+                <div id="output" class="mt-5"></div>
             </div>
         </div>
+    </div>
 
-        <!-- Module 3 Skill Building Exercise 1 - Part 1 JavaScript -->
-        <script>
-            function startThings() {
-                let romanNumeral // do not modify
-                // your code goes here
-                // be sure to assign the roman numeral to the variable romanNumeral
-                // it will be used to display it on the web page using the code below
+    <!-- Module 3 Skill Building Exercise 1 - Part 1 JavaScript -->
+    <script>
+        function startThings() {
+            let romanNumeral // do not modify
+            // your code goes here
+            // be sure to assign the roman numeral to the variable romanNumeral
+            // it will be used to display it on the web page using the code below
 
+            let userInput = parseInt(prompt("Enter a number", "1-10"))
 
-
-                // do not modify start
-                let outputDiv = document.getElementById('output')
-                outputDiv.innerHTML = romanNumeral
-                // do not modify end
+            if (userInput == 1) {
+                romanNumeral = "I"
+            } else if (userInput == 2) {
+                romanNumeral = "II"
+            } else if (userInput == 3) {
+                romanNumeral = "III"
+            } else if (userInput == 4) {
+                romanNumeral = "IV"
+            } else if (userInput == 5) {
+                romanNumeral = "V"
+            } else if (userInput == 6) {
+                romanNumeral = "VI"
+            } else if (userInput == 7) {
+                romanNumeral = "VII"
+            } else if (userInput == 8) {
+                romanNumeral = "VIII"
+            } else if (userInput == 9) {
+                romanNumeral = "IX"
+            } else if (userInput == 10) {
+                romanNumeral = "X"
+            } else {
+                romanNumeral = "Please make sure to enter a whole number, 1-10."
             }
-        </script>
-    </body>
+
+            // do not modify start
+            let outputDiv = document.getElementById('output')
+            outputDiv.innerHTML = romanNumeral
+            // do not modify end
+        }
+    </script>
+</body>
 
 </html>
